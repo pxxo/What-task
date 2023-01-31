@@ -1,0 +1,174 @@
+html {
+    margin: 0;
+}
+
+body {
+    height: 100%;
+    color: #9a8866;
+    margin: 0;
+    padding-bottom: 100px;
+    background-color: rgb(34, 34, 34);
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+a {
+    text-decoration: none;
+    color: #8383bc;
+}
+
+label {
+    width: 100%;
+}
+
+/*  */
+header {
+    opacity: 0;
+    box-shadow: 0px 3px 5px 5px #534833;
+    z-index: -1;
+    background-color: #534833;
+    height: 66px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.addstyle {
+    opacity: 100%;
+    transition: .5;
+    z-index: 99;
+}
+
+/*  */
+
+
+.select-trader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+
+    /* background-color: #534833; */
+    background: radial-gradient(ellipse at center, #534833 0%, rgb(34, 34, 34) 70%);
+
+}
+
+.serchbox {
+    font-weight: 300;
+    font-size: 15px;
+    padding: 5px 20px;
+    width: 30%;
+    display: inline-block;
+    height: 30px;
+    border: none;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    outline: none;
+    /* position: fixed; */
+}
+
+#serch-button {
+    border-radius: 0px 10px 10px 0px;
+    height: 40px;
+    transform: translate(-49px);
+    /* position: fixed; */
+}
+
+.select-button {
+    border-radius: 10px;
+    font-size: 15px;
+    transition: .2s;
+    color: white;
+    padding: 0;
+    cursor: pointer;
+    border: none;
+    background-color: #9a8866;
+    margin: 10px;
+}
+
+.select-button:hover {
+    opacity: 70%;
+}
+
+.v2 {
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.select-button img {
+    zoom: 75%;
+}
+
+
+
+.trader {
+    /* display: none; */
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.trader-name {
+    margin: 20px;
+    font-size: 30px;
+    text-align: center;
+    display: none;
+}
+
+.display-none {
+    display: none;
+}
+
+.task-card {
+    background-color: #3e3e3e;
+    color: #aeaeb0;
+    border: solid #9a8866 3px;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    width: auto;
+    height: auto;
+    display: inline-block;
+    transition: .2s;
+}
+
+.task-card:hover {
+    scale: 1.1;
+}
+
+.task-card-child {
+    /* cursor: pointer; */
+    display: flex;
+}
+
+.task-checkbox {
+    margin: 0 10px 0 0;
+    border-radius: 50%;
+    width: 20px;
+}
+
+.task-card-content {
+    font-weight: 900;
+}
+
+.ftitle {
+    font-weight: 900;
+    color: rgb(42, 165, 85);
+}
+
+.stitle {
+    font-weight: 900;
+    color: brown;
+}
