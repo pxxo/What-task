@@ -4,7 +4,6 @@ var taskAmount = 284;
 var serchbox = document.getElementById("serchbox");
 var serchbox02 = document.getElementById("serchbox02");
 function Serch() {
-    document.getElementById("task-card" + String(lastResult[i])).style.display = "none";
 
     // imgarea(土台)を再生成
     document.getElementById("imgarea").remove();
