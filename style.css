@@ -58,18 +58,18 @@ header {
     align-items: center;
     text-align: center;
     height: 100vh;
-
     /* background-color: #534833; */
     background: radial-gradient(ellipse at center, #534833 0%, rgb(34, 34, 34) 70%);
 
 }
+
+
 
 .serchbox {
     font-weight: 300;
     font-size: 15px;
     padding: 5px 20px;
     width: 30%;
-    display: inline-block;
     height: 30px;
     border: none;
     background-color: #f0f0f0;
@@ -83,6 +83,13 @@ header {
     height: 40px;
     transform: translate(-49px);
     /* position: fixed; */
+}
+
+.select-section {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .select-button {
@@ -111,7 +118,11 @@ header {
     zoom: 75%;
 }
 
-
+#unfindAlert {
+    display: none;
+    text-align: center;
+    margin: 200px 0;
+}
 
 .trader {
     /* display: none; */
@@ -122,9 +133,8 @@ header {
 
 .trader-name {
     margin: 20px;
-    font-size: 30px;
+    font-size: 40px;
     text-align: center;
-    display: none;
 }
 
 .display-none {
@@ -172,3 +182,87 @@ header {
     font-weight: 900;
     color: brown;
 }
+
+#imgareaOuter {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.imgzone {
+    vertical-align: top;
+    text-align: center;
+    font-weight: 900;
+    background-color: #3e3e3e;
+    color: #aeaeb0;
+    border: solid #9a8866 3px;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    width: auto;
+    height: 100%;
+    transition: .2s;
+    display: inline-block;
+}
+
+.itemAmount {
+    color: rgb(42, 165, 85);
+}
+
+/* 切り替えCheckbox */
+.switch-label {
+    display: inline-block;
+}
+
+.switch-label-sub {
+    display: inline-block;
+    font-size: 20px;
+    transform: translateY(-6px);
+    margin-left: 10px;
+}
+
+.toggle_switch {
+    vertical-align: top;
+    margin: 0 auto;
+    display: table;
+    font-size: 30px;
+}
+
+.switch {
+    margin: 10px;
+}
+
+.toggle_switch>input {
+    display: none;
+}
+
+.toggle_switch>label {
+    /* display: block; */
+    position: relative;
+    width: 50px;
+    height: 29px;
+    border-radius: 1em;
+    background-color: #2b2a2f;
+    cursor: pointer;
+}
+
+.toggle_switch>input:checked+label {
+    background-color: #2dcb45;
+}
+
+.toggle_switch>label::before {
+    position: absolute;
+    top: 0.05em;
+    left: 0.05em;
+    width: calc(1em - 0.1em);
+    height: calc(1em - 0.1em);
+    border-radius: calc(1em - 0.1em);
+    background-color: #fff;
+    transition: 0.5s;
+    content: "";
+}
+
+.toggle_switch>input:checked+label::before {
+    left: calc(100% - 1em + 0.05em);
+}
+
+/* 切り替えCheckbox */

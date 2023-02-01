@@ -4,6 +4,14 @@ var taskAmount = 284;
 var serchbox = document.getElementById("serchbox");
 var serchbox02 = document.getElementById("serchbox02");
 function Serch() {
+    document.getElementById("task-card" + String(lastResult[i])).style.display = "none";
+
+    // imgarea(土台)を再生成
+    document.getElementById("imgarea").remove();
+    var imgarea = document.getElementById("imgareaOuter");
+    var base_element = document.createElement("div");
+    base_element.setAttribute("id", "imgarea");
+    imgarea.appendChild(base_element);
 
     let lastResult = [];
     value = serchbox.value;
@@ -31,6 +39,12 @@ function Serch() {
 }
 
 function SerchtoHeader() {
+    // imgarea(土台)を再生成
+    document.getElementById("imgarea").remove();
+    var imgarea = document.getElementById("imgareaOuter");
+    var base_element = document.createElement("div");
+    base_element.setAttribute("id", "imgarea");
+    imgarea.appendChild(base_element);
 
     let lastResult = [];
     value = serchbox02.value;

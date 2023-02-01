@@ -14,44 +14,20 @@
         <input type="text" class="serchbox" name="serchbox02" id="serchbox02">
         <button class="select-button v2" id="serch-button02" onclick="SerchtoHeader()">検索</button>
     </header>
+    <!--  -->
     <section class="select-trader">
-        <!-- <button class="select-button" id="select-Praper" onclick="displaynone00()">
-            <img src="trader/Praper.jpg" alt="Praper">
-        </button>
-        <button class="select-button" id="select-Therapist" onclick="displaynone01()">
-            <img src="trader/Therapist.jpg" alt="Therapist">
-        </button>
-        <button class="select-button" id="select-Fence" onclick="displaynone02()">
-            <img src="trader/fence.png" alt="Fence">
-        </button>
-        <button class="select-button" id="select-Skier" onclick="displaynone03()">
-            <img src="trader/Skier.jpg" alt="Skier">
-        </button>
-        <br>
-        <button class="select-button" id="select-Peacekeeper" onclick="displaynone04()">
-            <img src="trader/peacekeeper.jpg" alt="Peacekeeper">
-        </button>
-        <button class="select-button" id="select-Mechanic" onclick="displaynone05()">
-            <img src="trader/mechanic.jpg" alt="Mechanic">
-        </button>
-        <button class="select-button" id="select-Ragman" onclick="displaynone06()">
-            <img src="trader/Ragman.jpg" alt="Ragman">
-        </button>
-        <button class="select-button" id="select-Jaeger" onclick="displaynone07()">
-            <img src="trader/Jaeger.jpg" alt="Jaeger">
-        </button> -->
-        <!-- <button class="select-button" id="select-LightKeeper" onclick="displaynone08()">
-            <img src="trader/Praper.jpg" alt="Praper">
-        </button> -->
-
-        <!-- <br> -->
         <input type="text" class="serchbox" name="serchbox" id="serchbox">
         <button class="select-button v2" id="serch-button" onclick="Serch()">検索</button>
-        <br>
-        <button class="select-button v2" id="select-task" onclick="AllTasks()">すべて表示</button>
-        <button class="select-button v2" id="select-task" onclick="SelectTasks()">チェックしたものだけ表示</button>
     </section>
-
+    <!--  -->
+    <section class="select-section">
+        <div class="toggle_switch">
+            <input class="switch" type="checkbox" name="xxx" id="cb_toggle_switch" onchange="slideChange()">
+            <label for="cb_toggle_switch" class="switch-label"></label>
+            <h2 class="switch-label-sub">選択したタスクを表示</h2>
+        </div>
+    </section>
+    <!--  -->
     <section class="trader Praper-task" id="Praper-task">
         <h2 class="trader-name" id="trader-name0">Praper</h2>
         <div class="task-card-zone">
@@ -4604,18 +4580,24 @@
         </div>
     </section>
 
+
+    <div id="imgareaOuter">
+        <div id="imgarea"></div>
+    </div>
+
+    <div id="unfindAlert">
+        <h1>選択されたタスクが見つかりませんでした。</h1>
+    </div>
     <!-- <section class="trader LightKeeper-task" id="LightKeeper-task">
         <h2 class="trader-name" id="trader-name8">LightKeeper</h2>
     </section> -->
 
     <script type="text/javascript" src="jquery-cookie-master/src/jquery-3.6.3.min.js"></script>
     <script type="text/javascript" src="jquery-cookie-master/src/jquery.cookie.js"></script>
+    <script src="scripts/whatNeed.js"></script>
     <script src="scripts/header.js"></script>
-    <!-- <script src="scripts/widechecked.js"></script> -->
     <script src="scripts/Aserch.js"></script>
     <script src="scripts/save-cokkie.js"></script>
-    <script src="scripts/Aitem-db.js"></script>
-    <!-- <script src="scripts/select-trader.js"></script> -->
     <script src="scripts/Aselect-task.js"></script>
 </body>
 

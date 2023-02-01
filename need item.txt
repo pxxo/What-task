@@ -1,0 +1,44 @@
+0:MP-133 12ga pump-action shotgun:x2
+1:none
+2:Machinery key:x1
+3:none
+4:Tarcone Director's office key:1
+5:MS2000 Marker:4
+6:none
+7:none
+8:Portable bunkhouse key:1
+9:6L31:3
+10:none
+11:none
+12:none
+13:none
+14:none
+15:Dorm room 203 key:1
+16:none
+17:Lower half-mask:7
+18:none
+19:Bars A-2607 95H18 knife:5
+20: AK-74N:1
+    M4A1:1
+    PM pistol:1
+21:none
+22:none
+23: USEC Dogtag:7
+    BEAR Dogtag:7
+24:MS2000 Marker:3
+25:none
+26:none
+27:none
+28:none
+29:none
+30: 6-STEN-140-M military battery:1
+    OFZ 30x160mm shell:5
+31:MS2000 Marker:1
+32:M67 Hand grenade:1
+33:none
+34:none
+35:none
+36:MS2000 Marker:1
+37:none
+38:USEC Dogtag:20
+39:none
