@@ -236,16 +236,20 @@ header {
 }
 
 .toggle_switch>label {
+    transition-delay: .5s;
+    transition: .2s;
     /* display: block; */
     position: relative;
     width: 50px;
-    height: 29px;
+    height: 30px;
     border-radius: 1em;
     background-color: #2b2a2f;
     cursor: pointer;
 }
 
 .toggle_switch>input:checked+label {
+    transition-delay: .5s;
+    transition: .2s;
     background-color: #2dcb45;
 }
 
@@ -266,3 +270,37 @@ header {
 }
 
 /* 切り替えCheckbox */
+
+/* トップへ戻るボタン */
+.page_top_btn {
+    line-height: 60px;
+    transition: .2s;
+    border-radius: 50%;
+    vertical-align: middle;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    font-weight: bold;
+    padding: 0.7em;
+    text-align: center;
+    background: #9a8866;
+    color: #fff;
+}
+
+/* マウスオーバー時 */
+.page_top_btn:hover {
+    opacity: 70%;
+    background: #6c5e42;
+}
+
+.NotPhone {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        display: none;
+    }
+}

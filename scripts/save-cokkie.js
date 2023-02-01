@@ -1,3 +1,4 @@
+// クッキーの保存
 jQuery(function ($) {
     if ($.cookie("chk_sample_selected_value")) {
 
@@ -21,5 +22,19 @@ jQuery(function ($) {
         });
 
         $.cookie("chk_sample_selected_value", save_values.join(","));
+    });
+});
+
+// スムーズなスクロール
+$(function () {
+    $('a[href^="#"]').click(function () {
+        var href = $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top;
+        var speed = 500;
+        $("html, body").animate({
+            scrollTop: position
+        }, speed, "swing");
+        return false;
     });
 });
