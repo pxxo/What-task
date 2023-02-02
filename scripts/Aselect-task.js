@@ -89,6 +89,7 @@ function SelectTasks() {
         itemName.push(key[i]);
         itemAmount.push(arrayAmount[key[i]]);
     }
+
     console.log(itemName);
     console.log(itemAmount);
 
@@ -99,45 +100,47 @@ function SelectTasks() {
     base_element.setAttribute("id", "imgarea");
     imgarea.appendChild(base_element);
 
-    for (i = 1; i < itemName.length; i++) {
+    for (i = 0; i < itemName.length; i++) {
         // 画像生成
         var img_element = document.createElement('img');
-        img_element.src = 'item/item' + String(item[i]) + '.png'; // 画像パス
-        // img_element.width = 100; // 横サイズ（px）
-        // img_element.height = 100; // 縦サイズ（px）
+        if (String(item[i]) != "NaN" && itemName.join() != "") {
+            img_element.src = 'item/item' + String(item[i]) + '.png'; // 画像パス
+            // img_element.width = 100; // 横サイズ（px）
+            // img_element.height = 100; // 縦サイズ（px）
 
-        // div生成
-        var div_element = document.createElement('div');
-        div_element.classList.add("imgzone");
-        div_element.setAttribute("id", "imgzone" + String(i))
+            // div生成
+            var div_element = document.createElement('div');
+            div_element.classList.add("imgzone");
+            div_element.setAttribute("id", "imgzone" + String(i))
 
-        // img_element.width = 100; // 横サイズ（px）
-        // img_element.height = 100; // 縦サイズ（px）
+            // img_element.width = 100; // 横サイズ（px）
+            // img_element.height = 100; // 縦サイズ（px）
 
-        //改行
-        let new_element = document.createElement('br');
+            //改行
+            let new_element = document.createElement('br');
 
-        // アイテム名のtext生成
-        let name_element = document.createElement('span');
-        name_element.classList.add("itemName");
-        name_element.innerHTML = itemName[i] + "「アイテム名」";
-        name_element.setAttribute("id", "ItemNameText" + String(i))
+            // アイテム名のtext生成
+            let name_element = document.createElement('span');
+            name_element.classList.add("itemName");
+            name_element.innerHTML = itemNameArr[Number(itemName[i]) - 1];
+            name_element.setAttribute("id", "ItemNameText" + String(i))
 
-        // アイテム数のtext生成
-        let amount_element = document.createElement('span');
-        amount_element.classList.add("itemAmount");
-        amount_element.innerHTML = "x" + String(itemAmount[i]) + "個";
-        amount_element.setAttribute("id", "ItemAmountText" + String(i))
+            // アイテム数のtext生成
+            let amount_element = document.createElement('span');
+            amount_element.classList.add("itemAmount");
+            amount_element.innerHTML = "x" + String(itemAmount[i]) + "個";
+            amount_element.setAttribute("id", "ItemAmountText" + String(i))
 
-        // 要素を挿入
-        let content_area = document.getElementById("imgarea");
-        content_area.appendChild(div_element);
-        var imgzone = document.getElementById("imgzone" + String(i));
-        imgzone.appendChild(img_element);
-        imgzone.appendChild(new_element);
-        imgzone.appendChild(name_element);
-        imgzone.appendChild(amount_element);
-        post.pop();
+            // 要素を挿入
+            let content_area = document.getElementById("imgarea");
+            content_area.appendChild(div_element);
+            var imgzone = document.getElementById("imgzone" + String(i));
+            imgzone.appendChild(img_element);
+            imgzone.appendChild(new_element);
+            imgzone.appendChild(name_element);
+            imgzone.appendChild(amount_element);
+            post.pop();
+        }
     }
     // ここまで array.js
 
@@ -169,7 +172,7 @@ function AllTasks() {
         document.getElementById("trader-name" + String(i)).style.display = "block";
     }
     for (let i = 0; i < taskAmount; i++) {
-        document.getElementById("task-card" + String(i)).style.display = "inline-block";
+        document.getElementById("task-card" + String(i)).style.display = "block";
     }
 }
 
