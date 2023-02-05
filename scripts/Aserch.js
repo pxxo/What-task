@@ -1,5 +1,5 @@
 
-var taskAmount = 284;
+var taskAmount = 288;
 
 var serchbox = document.getElementById("serchbox");
 var serchbox02 = document.getElementById("serchbox02");
@@ -245,6 +245,7 @@ var task = [
     "gunsmith - part 15",
     "gunsmith - part 16",
     "gunsmith - part 17",
+    "gunsmith - part 18",
     "gunsmith - part 19",
     "gunsmith - part 20",
     "gunsmith - part 21",
@@ -280,6 +281,9 @@ var task = [
     "assessment - part 1",
     "assessment - part 2",
     "assessment - part 3",
+    "key to the tower",
+    "knock-knock",
+    "getting acquainted",
     // ragman
     "only business",
     "audit",

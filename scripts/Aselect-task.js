@@ -1,4 +1,4 @@
-var taskAmount = 284;
+var taskAmount = 288;
 
 var trader = document.getElementsByClassName("trader");
 function SelectTasks() {

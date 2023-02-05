@@ -1,3 +1,5 @@
+
+// 現在は使っていないファイル array.js
 // チェックがついていたタスク番号
 // var getnum = post
 getnum = [0, 10];
