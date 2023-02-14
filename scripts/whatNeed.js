@@ -107,7 +107,7 @@ var task101 = { taskname: "", tasknum: "0", itemnum: "" };
 var task102 = { taskname: "", tasknum: "0", itemnum: "176,176,176,176,176,176,176,176,176,176,176,176" };
 var task103 = { taskname: "", tasknum: "0", itemnum: "" };
 var task104 = { taskname: "", tasknum: "0", itemnum: "" };
-var task105 = { taskname: "", tasknum: "0", itemnum: "177" };
+var task105 = { taskname: "", tasknum: "0", itemnum: "177,200" };
 // PeaceKeeper
 var task106 = { taskname: "", tasknum: "0", itemnum: "113,114" };
 var task107 = { taskname: "", tasknum: "0", itemnum: "117,117,117" };
