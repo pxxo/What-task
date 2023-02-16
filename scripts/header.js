@@ -1,5 +1,6 @@
 if (650 >= window.innerWidth) {
-    alert('申し訳ございません。\nスマホにはまだ対応しておりません。\nおとなしくお待ちやがれください。')
+    // alert('申し訳ございません。\nスマホにはまだ対応しておりません。\nおとなしくお待ちやがれください。')
+    alert('申し訳ございません。\nスマホにはまだ対応しておりません。')
 }
 function get() {
     var windowSize = window.innerHeight;

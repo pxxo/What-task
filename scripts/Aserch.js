@@ -3,8 +3,13 @@ var taskAmount = 288;
 
 var serchbox = document.getElementById("serchbox");
 var serchbox02 = document.getElementById("serchbox02");
-function Serch() {
 
+
+
+function Serch() {
+    //  ボタンを初期化
+    var checkStait = document.getElementById("cb_toggle_switch");
+    checkStait.checked = false;
     // imgarea(土台)を再生成
     document.getElementById("imgarea").remove();
     var imgarea = document.getElementById("imgareaOuter");
@@ -39,6 +44,9 @@ function Serch() {
 }
 
 function SerchtoHeader() {
+    //ボタンを初期化
+    var checkStait = document.getElementById("cb_toggle_switch");
+    checkStait.checked = false;
     // imgarea(土台)を再生成
     document.getElementById("imgarea").remove();
     var imgarea = document.getElementById("imgareaOuter");
@@ -72,7 +80,24 @@ function SerchtoHeader() {
     }
 }
 
+serchbox.addEventListener('keypress', enterEvent);
+serchbox02.addEventListener('keypress', enterEventtoHeader);
 
+function enterEvent(e) {
+    if (e.keyCode === 13) {
+        Serch();
+    } else {
+        return false;
+    }
+}
+
+function enterEventtoHeader(e) {
+    if (e.keyCode === 13) {
+        SerchtoHeader();
+    } else {
+        return false;
+    }
+}
 
 var task = [
     // praper

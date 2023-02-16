@@ -69,7 +69,7 @@ function SelectTasks() {
     item = item.sort((a, b) => {
         return a < b ? -1 : 1;
     });
-    console.log(item);
+    // console.log(item);
 
     // それぞれのアイテムの合計値を導出
     var arr = ItemNum;
@@ -90,8 +90,8 @@ function SelectTasks() {
         itemAmount.push(arrayAmount[key[i]]);
     }
 
-    console.log(itemName);
-    console.log(itemAmount);
+    // console.log(itemName);
+    // console.log(itemAmount);
 
     // imgarea(土台)を再生成
     document.getElementById("imgarea").remove();
@@ -180,7 +180,11 @@ function slideChange() {
     var checkStait = document.getElementById("cb_toggle_switch").checked;
     if (String(checkStait) == "false") {
         AllTasks();
+        SelectTasks();
+        AllTasks();
     } else if (checkStait) {
+        SelectTasks();
+        AllTasks();
         SelectTasks();
     }
 }
