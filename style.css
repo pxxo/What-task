@@ -63,7 +63,6 @@ header {
 }
 
 
-
 .serchbox {
     font-weight: 300;
     font-size: 15px;
@@ -116,6 +115,37 @@ header {
 .select-button img {
     zoom: 75%;
 }
+
+/*  */
+.trader-button {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.button-outer {
+    margin: 10px;
+    border-radius: 5px;
+    padding: 5px;
+    width: auto;
+    background-color: #3e3e3e;
+    display: inline-block;
+    transition: .2;
+}
+
+.button-outer:hover {
+    opacity: .7;
+}
+
+.button-inner {
+    font-size: 17px;
+    font-weight: 900;
+}
+
+.button-inner a {
+    color: #aeaeb0;
+}
+
+/*  */
 
 #unfindAlert {
     display: none;
